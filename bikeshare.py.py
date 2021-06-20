@@ -7,7 +7,7 @@ from termcolor import colored
 import matplotlib.pyplot as plt
 from scipy import stats
 
-#avoid somtime can't find csv file problem
+
 
 current_dir = os.curdir
 
@@ -90,10 +90,12 @@ def get_filters(file_dict):
                 nan_check = 'yes'
                 print(colored('Your choose: Eliminating rows that has nan value. \n','yellow'))
                 nan_verify = False
-            else:
+            elif nan_check == 'n':
                 nan_check = 'no'
                 print(colored('Your choose: Keep the data as original.','yellow'))
                 nan_verify = False
+            else:
+                print('Seems like your input is invalid, please try again!\n')
 
     print('-'*40)
 
