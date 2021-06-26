@@ -193,7 +193,7 @@ def time_stats(df):
     # display the most common start hour
     df['Hour'] = df['Start Time'].dt.hour
     most_common_hour, rental_counts, percentage = get_statis(df,'Hour')
-    print('The most common start hour is at {}:00, has {} rentals. ({}% of all rentals)'.format(most_common_hour,rental_counts,percentage))
+    print('The most common start hour is at {}, has {} rentals. ({}% of all rentals)'.format(most_common_hour + colored(":00",'green'),rental_counts,percentage))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     input("\nPress any key to see analysis of the most popular stations and trip")
