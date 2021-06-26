@@ -326,7 +326,7 @@ def general_report_on_month(city_dict):
     df_dict['integrated'] = df_dict['integrated'].groupby(['Month_in_num'],as_index=False).sum()
 
     plt.figure(figsize=(12,10))
-    plt.style.use('ggplot')
+    plt.style.use('seaborn-darkgrid')
     plt.title('Rental duration through out Months \nCorrelation Coefficient: {} ({})'.format(corr,corr_status))
     plt.xlabel('Months')
     plt.ylabel('Sum of rental duration in hours')
