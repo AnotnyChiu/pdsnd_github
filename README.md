@@ -16,6 +16,17 @@ Csv files for bike rental data:
 2. new_york_city.csv
 3. washington.csv
 
+Python Package
+1. time
+2. calendar
+3. pandas as pd
+4. numpy as np
+5. os
+6. termcolor colored
+7. matplotlib.pyplot
+8. scipy stats
+
 ### Credits
 stackoverflow
+pluralsight
 
