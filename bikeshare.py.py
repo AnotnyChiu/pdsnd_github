@@ -90,7 +90,7 @@ def get_filters(file_dict):
                 nan_check = 'yes'
                 print(colored('Your choose: Eliminating rows that has nan value. \n','yellow'))
                 nan_verify = False
-            elif nan_check == 'n':
+            elif nan_input == 'n':
                 nan_check = 'no'
                 print(colored('Your choose: Keep the data as original.','yellow'))
                 nan_verify = False
